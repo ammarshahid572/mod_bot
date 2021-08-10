@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="jquery-2.1.1.min.js"></script>
+	<script>
+	//Huge thanks to Ryan Sumner for authoring this code, and allowing me to tweak and publish it.
+	var img_array =["2.gif","1.gif","2.gif","2.gif","3.gif","4.gif"];//this is where you add GIFs, with ,"#.gif"
+	var time_lapse = 5000;//time in milliseconds between image transitions
+	$(document).ready(function(){
+		var index = 0;
+		function changeImage(){
+			index=Math.floor(Math.random() * img_array.length);
+			if(index==img_array.length){
+				index=0;
+			}
+			
+			if (index==1){ time_lapse=3000;}
+			else time_lapse=5000;
+			$("#image").attr("src",img_array[index]);
+			setTimeout(changeImage,time_lapse);
+		}
+		changeImage();
+	});
+	
+	</script>
+	<style>
+	#content{
+		text-align: center;
+	}
+	#image{
+
+	}
+	</style>
+	<title>The GIFt</title>
+	<style>
+	body {
+  		background-color: #000000;
+		}
+</style>
+</head>
+<body>
+	<div id="content">
+		<img src="" width="480" height="320" alt="" id="image">
+	</div>
+</body>
+</html>

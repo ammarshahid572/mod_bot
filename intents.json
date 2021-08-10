@@ -1,0 +1,43 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "Is anyone there?","hey","hola", "hello", "good day","piko","activate"],
+         "responses": ["Hello", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag":"introduction",
+        "patterns":["Who are you", "Whats this", "what are you","where is this"],
+        "responses":["Hi,I am Pico, I am a Voice Assistant Robot", "Hello, I am Piko, I am a Robot Assistant", "Hi, I am Pico, ask me questions!"],
+        "context":[""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure", "You are Welcome"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": [],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["wow you could help me", "what you can do", "what help you provide", "how you can be helpful?", "what support is offered"],
+         "responses": ["I am a Modular Robot. I can help you find answers on web, play songs, and move around", "I can answer your questions, play songs, spell words and move around. "],
+         "context": [""]
+        },
+         {"tag": "exist",
+         "patterns": ["how were you created", "who created you", "why do you exist", "what is your story"],
+         "responses": ["I was created by Ash Labs Pakistan for assistance and automation control. "],
+         "context": [""]
+        },
+         {"tag": "error",
+         "patterns": ["not what I asked", "wrong answer", "please help me", "why can't you asnwer","invalid", "that is wrong","no"],
+         "responses": ["I am sorry, if you want to me to search something, say ,Search, before question", "I apologize, if you want to search something say search and the questions", "I am sorry, I could not help, try saying search before question"],
+         "context": [""]
+        }
+   ]
+}
